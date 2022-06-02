@@ -160,6 +160,13 @@ h3{
         display: block;
         color: var(--White);
     }
+    li:hover{
+        cursor: pointer;
+        border-bottom: 2px solid white;
+    }    
+    li{
+        border-bottom: 2px solid transparent;
+    }
     #hero{
         display: flex;
         height: auto;
@@ -174,6 +181,10 @@ h3{
     .slider-btn{
         width: 70px;
         padding: 1.6rem 1.5rem;
+    }
+    .slider-btn:hover{
+        cursor: pointer;
+        background-color: var(--Very-Dark-Gray);
     }
     .slider-arrow {
         height: auto;
@@ -195,6 +206,11 @@ h3{
     .shop-btn{
         margin-top: 1rem;
     }
+    .shop-btn:hover{
+        cursor: pointer;
+        color: var(--Dark-Gray);
+    }
+
     #about{
         display: flex;
     }
