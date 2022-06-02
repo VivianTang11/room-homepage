@@ -17,28 +17,83 @@
 body{
     font-family: 'League Spartan', sans-serif;
     position: relative;
-}
-
-header{
-    border: 1px red solid;
-    background-color: purple;
+    min-height: 100vh;
 }
 
 
-
+.navbar{
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 110px;
+    position: relative;
+    z-index: 1;
+}
+.navbar.active{
+    background-color: white;
+}
+.toggle-btn{
+    position: absolute;
+    left: 2rem;
+    background-color: transparent;
+    border: none;
+}
 nav{
-    border: 1px solid blue;
     display: none
 }
 nav.active{
+    width: 100%;
     display: flex;
+    justify-content: flex-end;
+    margin-right: 1rem;
 }
-
-
 nav ul{
     list-style: none;
     display:flex;
 }
 nav ul li{
-    margin: 0 1rem;
+    margin-left: 2rem;
+    text-transform: lowercase;
+}
+.logo-img{
+    display: none;
+}
+.logo-img.active{
+    display: block;
+}
+
+
+main{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+@media screen and (min-width: 700px){
+    header{
+        justify-content: flex-start;
+        width: fit-content;
+        height: auto;
+    }
+    .toggle-btn{
+        visibility:hidden;
+    }
+    .navbar{
+        margin-left: 4rem;
+    }
+    .logo-img.active{
+        margin-right: 1rem;
+    }
+    nav{
+        display: block;
+        color: var(--White);
+    }
+    #hero{
+        display: flex;
+    }
+    .hero-img{
+        content:url("./images/desktop-image-hero-1.jpg");
+
+    }
 }
