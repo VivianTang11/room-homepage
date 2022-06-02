@@ -6,6 +6,9 @@
 --Black: hsl(0, 0%, 0%);
 --White: hsl(0, 0%, 100%);
 --Very-Dark-Gray: hsl(0, 0%, 27%);
+
+--padding-rl-mobile: 2rem;
+--padding-ud-mobile: 4rem;
 }
 
 *, *::after, *::before{
@@ -35,7 +38,7 @@ body{
 }
 .toggle-btn{
     position: absolute;
-    left: 2rem;
+    left: var(--padding-rl-mobile);
     background-color: transparent;
     border: none;
 }
@@ -53,7 +56,7 @@ nav ul{
     display:flex;
 }
 nav ul li{
-    margin-left: 2rem;
+    margin-left: var(--padding-rl-mobile);
     text-transform: lowercase;
 }
 .logo-img{
@@ -68,6 +71,58 @@ main{
     position: absolute;
     top: 0;
     left: 0;
+}
+.hero-slider{
+    position: relative;
+    height: 360px;
+}
+.slider-img{
+
+    object-fit: cover;
+}
+
+.slider-btns{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.slider-btn{
+    background-color: var(--Black);
+    border: none;
+    padding: 1rem 1.5rem;
+}
+.slider-arrow{
+    height: 18px;
+}
+.hero-text{
+    padding: var(--padding-ud-mobile) var(--padding-rl-mobile);
+}
+h2{
+    font-size: 2.3rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+p{
+    color: var(--Dark-Gray);
+    line-height: 1.5;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.shop-btn{
+    margin-top: 2rem;
+    border: none;
+    background-color: transparent;
+}
+span{
+    text-transform: uppercase;
+    letter-spacing: 12px;
+    font-weight: 700;
+}
+.shop-arrow{
+    margin-left: 1rem;
 }
 
 @media screen and (min-width: 700px){
@@ -91,9 +146,37 @@ main{
     }
     #hero{
         display: flex;
+        height: auto;
     }
-    .hero-img{
-        content:url("./images/desktop-image-hero-1.jpg");
+    .hero-slider{
+        height: 534px;
+        width: 60vw;
+    }
+    .slider-btns{
+        right: -140px;
+    }
+    .slider-btn{
+        width: 70px;
+        padding: 1.6rem 1.5rem;
+    }
+    .slider-arrow {
+        height: auto;
+    }
+    .hero-text{
+        width: 40vw;
+    }
+    .slider-img{
+        content: url("./images/desktop-image-hero-1.jpg");
+    }
 
+    .hero-text{
+        padding: 7rem;
+    }
+    h2{
+        font-size: 2.5rem;
+    }
+    
+    .shop-btn{
+        margin-top: 1rem;
     }
 }
