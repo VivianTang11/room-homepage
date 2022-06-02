@@ -1,2 +1,44 @@
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;600;700&display=swap');
+
+
+:root{
+--Dark-Gray: hsl(0, 0%, 63%);
+--Black: hsl(0, 0%, 0%);
+--White: hsl(0, 0%, 100%);
+--Very-Dark-Gray: hsl(0, 0%, 27%);
+}
+
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'League Spartan', sans-serif;
+    position: relative;
+}
+
+header{
+    border: 1px red solid;
+    background-color: purple;
+}
+
+
+
+nav{
+    border: 1px solid blue;
+    display: none
+}
+nav.active{
+    display: flex;
+}
+
+
+nav ul{
+    list-style: none;
+    display:flex;
+}
+nav ul li{
+    margin: 0 1rem;
+}

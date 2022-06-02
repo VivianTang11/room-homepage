@@ -22,7 +22,3 @@ The designs were created to the following widths:
 
 - Font size: 12px
 
-### Font
-
-- Family: [League Spartan](https://fonts.google.com/specimen/League+Spartan)
-- Weights: 500, 600, 700
