@@ -99,7 +99,7 @@ main{
 .hero-text{
     padding: 4rem 2rem;
 }
-h2{
+h1{
     font-size: 2.3rem;
     font-weight: 600;
     margin-bottom: 1rem;
@@ -207,7 +207,7 @@ h3{
     .hero-text{
         padding: 4rem;
     }
-    h2{
+    h1{
         font-size: 2rem;
     }
     
@@ -242,7 +242,7 @@ h3{
     .hero-text{
         padding: 6rem;
     }
-    h2{
+    h1{
         font-size: 2.5rem;
     }
     .about-text{
