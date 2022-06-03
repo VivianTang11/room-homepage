@@ -192,9 +192,6 @@ h3{
     .hero-text{
         width: 40vw;
     }
-    .slider-img{
-        content: url("./images/desktop-image-hero-1.jpg");
-    }
 
     .hero-text{
         padding: 3rem;
