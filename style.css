@@ -1,14 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;600;700&display=swap');
 
-
 :root{
 --Dark-Gray: hsl(0, 0%, 63%);
 --Black: hsl(0, 0%, 0%);
 --White: hsl(0, 0%, 100%);
 --Very-Dark-Gray: hsl(0, 0%, 27%);
-
---padding-rl-mobile: 2rem;
---padding-ud-mobile: 4rem;
 }
 
 *, *::after, *::before{
@@ -24,7 +20,6 @@ body{
     width: 100vw;
 }
 
-
 .navbar{
     background-color: transparent;
     display: flex;
@@ -39,7 +34,7 @@ body{
 }
 .toggle-btn{
     position: absolute;
-    left: var(--padding-rl-mobile);
+    left: 2rem;
     background-color: transparent;
     border: none;
 }
@@ -57,7 +52,7 @@ nav ul{
     display:flex;
 }
 nav ul li{
-    margin-left: var(--padding-rl-mobile);
+    margin-left: 2rem;
     text-transform: lowercase;
 }
 .logo-img{
@@ -86,7 +81,6 @@ main{
     width: 100%;
     height: 100%;
 }
-
 .slider-btns{
     display: flex;
     align-items: center;
@@ -103,7 +97,7 @@ main{
     height: 18px;
 }
 .hero-text{
-    padding: var(--padding-ud-mobile) var(--padding-rl-mobile);
+    padding: 4rem 2rem;
 }
 h2{
     font-size: 2.3rem;
@@ -116,7 +110,6 @@ p{
     font-weight: 500;
     font-size: 16px;
 }
-
 .shop-btn{
     margin-top: 2rem;
     border: none;
@@ -141,12 +134,9 @@ h3{
     font-size: 14px;
 }
 .about-text{
-    padding: 3rem var(--padding-rl-mobile);
+    padding: 3rem 2rem;
 }
-footer{
-    position: absolute;
-    bottom: 5px;
-}
+
 
 @media screen and (min-width: 700px){
     header{
@@ -238,6 +228,12 @@ footer{
     .about-text{
         padding: 4rem 3rem;
     }
+    #about > img{
+        max-width: 400px;
+        max-height: 200px;
+        object-fit: cover;
+    }
+
 }
 @media screen and (min-width: 1000px) {
     .hero-text{
@@ -246,9 +242,11 @@ footer{
     h2{
         font-size: 2rem;
     }
-    #about > img{
-        width: 30%;
-        object-fit: cover;
+    .about-text{
+        padding: 1rem 1rem;
+    }
+    .about-text > p{
+        font-size: 0.9rem;
     }
 }
 @media screen and (min-width: 1400px) {
@@ -257,5 +255,8 @@ footer{
     }
     h2{
         font-size: 2.5rem;
+    }
+    .about-text{
+        padding: 3rem 3rem;
     }
 }
