@@ -76,12 +76,15 @@ main{
 .hero-slider{
     position: relative;
     height: 360px;
+    transition: 5s opacity ease-in-out;
+    transition-delay: 5s 
+
+
 }
 .slider-img{
     object-fit:cover;
     width: 100%;
     height: 100%;
-
 }
 
 .slider-btns{
@@ -139,6 +142,10 @@ h3{
 }
 .about-text{
     padding: 3rem var(--padding-rl-mobile);
+}
+footer{
+    position: absolute;
+    bottom: 5px;
 }
 
 @media screen and (min-width: 700px){
