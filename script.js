@@ -4,7 +4,7 @@ const image = document.querySelector('#image')
 const title = document.querySelector('#title')
 const text = document.querySelector('#text')
 let index = 0
-const mediaQuery = window.matchMedia("(min-width: 700px)")
+const mediaQuery = window.matchMedia("(min-width: 1000px)")
 
 let array;
 

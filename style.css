@@ -138,7 +138,7 @@ h3{
 }
 
 
-@media screen and (min-width: 700px){
+@media screen and (min-width: 1000px){
     header{
         justify-content: flex-start;
         width: fit-content;
@@ -205,7 +205,7 @@ h3{
     }
 
     .hero-text{
-        padding: 3rem;
+        padding: 4rem;
     }
     h2{
         font-size: 2rem;
@@ -226,28 +226,17 @@ h3{
         font-size: 16px;
     }
     .about-text{
-        padding: 4rem 3rem;
+        padding: 2rem 3rem;
     }
     #about > img{
-        max-width: 400px;
-        max-height: 200px;
+        min-width: 300px;
+        height: 250px;
         object-fit: cover;
-    }
-
-}
-@media screen and (min-width: 1000px) {
-    .hero-text{
-        padding: 4rem;
-    }
-    h2{
-        font-size: 2rem;
-    }
-    .about-text{
-        padding: 1rem 1rem;
     }
     .about-text > p{
         font-size: 0.9rem;
     }
+
 }
 @media screen and (min-width: 1400px) {
     .hero-text{
